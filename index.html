@@ -9,40 +9,59 @@
     <link href="css/styles.css" rel="stylesheet" />
 
 <body>
+    <!-- faixa preta, no mobile desativado↓ -->
+    <div class="faixa">
+        <p>Grandes ofertas em comedouros</p>
+        <div>
+            <select name="idioma" id="linguas">
+                <option value="1">Brazil</option>
+                <option value="2">Estados Unidos</option>
+                <option value="3">Argentina</option>
+            </select>
+            <select name="sifrao" id="moedas">
+                <option value="1">BR$</option>
+                <option value="2">USD</option>
+                <option value="3">ARS</option>
+            </select>
+        </div>
+    </div>
     <!-- header↓ -->
     <header>
-        <div class="faixa">
-            <p>Grandes ofertas em comedouros</p>
-            <div>
-                <div>
-                    <select name="idioma" id="linguas">
-                        <option value="1">Brazil</option>
-                        <option value="2">Estados Unidos</option>
-                        <option value="3">Argentina</option>
-                    </select>
-                    <select name="sifrao" id="moedas">
-                        <option value="1">BR$</option>
-                        <option value="2">USD</option>
-                        <option value="3">ARS</option>
-                    </select>
-                </div>
-            </div>
-        </div>
         <div class="titulo">
             <h1>🐱Mundo<span>Animal🐶</span></h1>
         </div>
+        <!-- menu do mobile, desktop desativado -->
         <div class="menu-mobile">
             <img src="img/Vector (1).svg" alt="menu">
         </div>
+        <!-- nav do desktop, mobile desativado ↓-->
+        <div class="menu-desktop">
+            <nav>
+                <a href="#produtos">
+                    <p>🐾Produtos</p>
+                </a>
+                <a href="#fale-conosco">
+                    <p>🐾Contato</p>
+                </a>
+                <a href="#cupons">
+                    <p>🐾Cupons</p>
+                </a>
+                <a href="#fale-conosco">
+                    <p>🐾Fale Conosco</p>
+                </a>
+            </nav>
+        </div>
+        <!-- nav do desktop, mobile desativado↑ -->
     </header>
     <!-- header↑ -->
     <!-- conteudo↓ -->
     <main>
         <section>
             <div class="banner">
-                <img src="img/logo.png" alt="banner">
+                <img src="img/cartaz.png" alt="banner">
                 <h2>É um prazer te ter aqui!</h2>
-                <p>COMEDOUROS</p>
+                <p class="textp">Comedouros com desconto!</p>
+                <p class="textcomb">COMEDOUROS</p>
             </div>
         </section>
         <section>
@@ -55,20 +74,23 @@
             <div class="menu">
                 <div class="indicativo">
                     <p>Comedouros</p>
-                    <p>-</p>
                     <p>Acessorios</p>
-                    <p>-</p>
                     <p>Comidas</p>
                 </div>
                 <div class="produtos">
-                    <img src="img/churrasquito.svg" alt="churrasquito">
-                    <p>Pestisco de Churrasquinho<br /><span>$150</span></p>
-                    <img src="img/tijela.svg" alt="tijela">
-                    <p>Comedouro para Cachorro<br /><span>$250</span></p>
-                    <img src="img/petisco.svg" alt="petisco">
-                    <p>Pestisco de Ossos<br /><span>$650</span></p>
+                    <p class="primeiro"><img src="img/churrasquito.svg" alt="churrasquito">
+                        <br /> Pestisco de Churrasquinho<span><br />$150</span>
+                    </p>
+                    <p class="segundo">
+                        <img src="img/tijela.svg" alt="tijela" width="239" height="245">
+                        <br />Comedouro para Cachorro<span><br />$250</span>
+                    </p>
+                    <p class="terceiro">
+                        <img src="img/petisco.svg" alt="petisco" height="245">
+                        <br />Pestisco de Ossos<br /><span><br />$650</span>
+                    </p>
                 </div>
-                <div class="contato">
+                <div class="contato" id="fale-conosco">
                     <h1>Contato</h1>
                     <form>
                         <div class="form">
@@ -82,7 +104,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="newsletter">
+                <div class="newsletter" id="cupons">
                     <div class="texto">
                         <img src="img/msg.png" alt="msg">
                         <h1>Inscreva-se para mais novidades</h1>
@@ -103,16 +125,16 @@
     <!-- footer↓ -->
     <footer>
         <p>🐱Mundo<span>Animal🐶</span></p>
-        <div class="sabermais">
+        <div class="sabermais" id="fale-conosco">
             <img src="img/Location.png" alt="localizacao">
             <img src="img/Phone.png" alt="telefone">
             <img src="img/Correo.png" alt="email">
         </div>
-        <div class="direitos">
-            <p>Todos os direitos reservados a Front End I</p>
-        </div>
     </footer>
     <!-- footer↑ -->
+    <div class="direitos">
+        <p>Todos os direitos reservados a Front End I</p>
+    </div>
 </body>
 
 </html>

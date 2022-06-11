@@ -3,3 +3,4 @@ Fiz todo o html ou quase parte dele em "display=flex" pois so aqui tive o real e
 e para passar pro responsivo dessa maneira fica bem mais facil
 comecei todo o projeto pelo mobile fist!
 Meu body se estiver com 2 tons de branco, peco desculpas pois meus monitores que estou utilizando atualmente  nao sao de tao boa qualidade, e tenho a lingeira imprenssao deles estarem destoando de cor!
+atentando a indentacao do codigo. 

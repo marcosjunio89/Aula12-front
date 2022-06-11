@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'roboto', sans-serif;
 }
+
 /* gerais↑ */
 /* header↓ */
 header {
@@ -15,6 +16,26 @@ header {
     font-size: 70%;
 }
 
+.faixa {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+#linguas {
+    background: none;
+    color: #FFFFFF;
+    border: none;
+}
+
+#moedas {
+    background: none;
+    color: #FFFFFF;
+    border: none;
+}
+
 .titulo h1 {
     color: #3C2313;
 }
@@ -22,6 +43,7 @@ header {
 .titulo h1 span {
     color: #FFFFFF;
 }
+
 /* header↑ */
 /* conteudo↓ */
 .banner {
@@ -31,7 +53,7 @@ header {
     height: auto;
 }
 
-.banner h2  {
+.banner h2 {
     position: absolute;
     top: 100px;
     background-color: #ffffff;
@@ -78,7 +100,7 @@ header {
     align-items: center;
 }
 
-.contato  {
+.contato {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -166,11 +188,11 @@ footer p {
     display: flex;
 }
 
-footer p span  {
+footer p span {
     color: #f0a83e;
 }
 
-.sabermais{
+.sabermais {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -183,3 +205,12 @@ footer p span  {
     height: 20px;
     justify-content: center;
 }
+
+/* mobile↓ */
+@media (max-width: 500px) {
+    .faixa {
+        display: none;
+    }
+}
+
+/* mobile↑ */
